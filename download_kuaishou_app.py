@@ -58,21 +58,7 @@ def get_video_url(get_url):
         elif 'www.kuaishou.com/short-video' in get_url:
             print('\n\nget_kuaishou_url: '+get_url,'\n')
             return get_url
-
-
-
-
-def get_url_list():
-    #获取所以视频链接
-    with open('快手视频链接.txt','r') as file:
-        url_list = file.readlines()
-    for url in url_list:
-        url = get_video_url(url)
-        main(url)
-    
-
-            
-            
+           
 
 if __name__ == "__main__":
     headers={
